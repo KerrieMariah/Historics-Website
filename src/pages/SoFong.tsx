@@ -3,6 +3,29 @@ import { Link } from 'react-router-dom'
 import { SiteFooter } from '../components/SiteFooter'
 import { SiteHeader } from '../components/SiteHeader'
 
+const features = [
+  {
+    title: 'Overall Length',
+    detail: '25 metres overall, with a 21.43-metre waterline.',
+  },
+  {
+    title: 'Sail Area',
+    detail: '242 square metres of sail across her classic gaff schooner rig.',
+  },
+  {
+    title: 'Perkins Sabre',
+    detail: '190hp auxiliary power — up to 9 knots, with an 800-nautical-mile range.',
+  },
+  {
+    title: 'Lead Ballast',
+    detail: '30,000 pounds of lead — recognised as the largest ever cast in Hong Kong at the time.',
+  },
+  {
+    title: 'Accommodation',
+    detail: 'Seven guests in three staterooms, plus crew quarters, with Webasto air conditioning and a HEM water maker.',
+  },
+]
+
 export function SoFong() {
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -19,26 +42,16 @@ export function SoFong() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media vessel-hero-media--sofong" aria-hidden="true">
-            <img src="/vessel-so-fong.jpg" alt="" />
+            <img src="/vessels/so-fong-15.jpg" alt="" />
             <div className="vessel-hero-veil" />
           </div>
 
           <div className="vessel-hero-content">
-            <p className="brand-signal animate-in">Hong Kong Historic Vessels</p>
-            <p className="vessel-kicker animate-in delay-1">S/Y · 1937 · Hong Kong-Built Gaff Schooner</p>
-            <h1 className="animate-in delay-1">So Fong</h1>
-            <p className="hero-lede animate-in delay-2">
+            <h1 className="animate-in">So Fong</h1>
+            <p className="hero-lede animate-in delay-1">
               An enduring classic schooner’s journey — “Beautiful Girl” in Cantonese, home again in Fragrant Harbour
               after nearly nine decades at sea.
             </p>
-            <div className="hero-actions animate-in delay-3">
-              <a className="btn btn-brass" href="#story">
-                Read Her Story
-              </a>
-              <Link className="btn btn-ghost" to="/#fleet">
-                Explore the Fleet
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -80,20 +93,22 @@ export function SoFong() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-so-fong.jpg"
-              alt="So Fong under sail — placeholder for hong-kong-historic-vessels-so-fong-photos-15"
+              src="/vessels/so-fong-15.jpg"
+              alt="So Fong under sail"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · so-fong-photos-15</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-so-fong-02.jpg"
-              alt="So Fong construction detail — placeholder for hong-kong-historic-vessels-so-fong-photos-14"
+              src="/vessels/so-fong-14.jpg"
+              alt="So Fong on the water"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · so-fong-photos-14</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">1937</p>
@@ -132,22 +147,24 @@ export function SoFong() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-so-fong.jpg"
+              src="/vessels/so-fong-10.jpg"
               className="img-focus-deck"
-              alt="So Fong on the water — placeholder for hong-kong-historic-vessels-so-fong-photos-10"
+              alt="So Fong sailing offshore"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · so-fong-photos-10</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-so-fong-02.jpg"
+              src="/vessels/so-fong-02.jpg"
               className="img-focus-low"
-              alt="So Fong restored — placeholder for hong-kong-historic-vessels-so-fong-photos-02"
+              alt="So Fong restored and sailing"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · so-fong-photos-02</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">2000–2025</p>
@@ -164,26 +181,54 @@ export function SoFong() {
           </div>
         </section>
 
+        <section className="vessel-restore" id="design">
+          <div className="vessel-restore-intro">
+            <p className="eyebrow">Technical Excellence</p>
+            <h2>Timeless design, still ready for sea</h2>
+            <p>
+              The majestic So Fong measures 25 metres overall with a 21.43-metre waterline and carries an impressive 242
+              square metres of sail. Powered by a dependable 190hp Perkins Sabre engine, she achieves a respectable top
+              speed of 9 knots with an 800-nautical-mile range. Her robust construction includes 30,000 pounds of lead
+              ballast, recognised as the largest ever cast in Hong Kong at the time.
+            </p>
+          </div>
+
+          <div className="vessel-features">
+            <p className="vessel-features-label">Classic form. Modern systems.</p>
+            <ul>
+              {features.map((feature) => (
+                <li key={feature.title}>
+                  <strong>{feature.title}</strong>
+                  <span>{feature.detail}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <p className="vessel-restore-note">
+            The beautifully appointed vessel accommodates seven guests in three comfortable staterooms plus crew
+            quarters, seamlessly blending original features like hand-carved panelling with modern systems including
+            efficient Webasto air conditioning and a reliable HEM water maker.
+          </p>
+        </section>
+
         <section className="charter vessel-charter" id="homecoming">
           <div
             className="charter-media"
             aria-hidden="true"
-            style={{ backgroundImage: 'url(/vessel-so-fong.jpg)' }}
+            style={{ backgroundImage: 'url(/vessels/so-fong-05.jpg)' }}
           />
-          <div className="charter-veil" aria-hidden="true" />
           <div className="charter-content">
-            <p className="eyebrow light">Home Again</p>
+            <p className="eyebrow">Home Again</p>
             <h2>Back where her story began</h2>
             <p>
               Nearly ninety years after she first slipped into Hong Kong waters, So Fong sails once more among the
               city’s historic fleet — a Sparkman &amp; Stephens classic, built by local hands, returned at last to
-              Fragrant Harbour.
+              Fragrant Harbour. Now happily back in her home waters, she continues to sail as a proud testament to both
+              classic yacht design and Hong Kong’s rich boatbuilding heritage.
             </p>
             <div className="hero-actions">
-              <Link className="btn btn-brass" to="/#fleet">
-                Meet the Fleet
-              </Link>
-              <Link className="btn btn-ghost" to="/contact">
+              <Link className="btn btn-brass" to="/contact">
                 Contact Us
               </Link>
             </div>

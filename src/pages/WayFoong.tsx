@@ -42,26 +42,16 @@ export function WayFoong() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media" aria-hidden="true">
-            <img src="/hero-wayfoong.jpg" alt="" />
+            <img src="/vessels/way-foong-charters-01.jpg" alt="" />
             <div className="vessel-hero-veil" />
           </div>
 
           <div className="vessel-hero-content">
-            <p className="brand-signal animate-in">Hong Kong Historic Vessels</p>
-            <p className="vessel-kicker animate-in delay-1">M/Y · 1930 · Hong Kong-Built Motor Launch</p>
-            <h1 className="animate-in delay-1">Way Foong</h1>
-            <p className="hero-lede animate-in delay-2">
+            <h1 className="animate-in">Way Foong</h1>
+            <p className="hero-lede animate-in delay-1">
               A timeless icon of Hong Kong’s maritime heritage — seventy feet of Burmese teak, still keeping the
               islands afloat in style.
             </p>
-            <div className="hero-actions animate-in delay-3">
-              <a className="btn btn-brass" href="#charter">
-                Charter Way Foong
-              </a>
-              <a className="btn btn-ghost" href="#story">
-                Read Her Story
-              </a>
-            </div>
           </div>
         </section>
 
@@ -103,20 +93,22 @@ export function WayFoong() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-way-foong.jpg"
-              alt="Way Foong on the water — placeholder for hong-kong-historic-vessels-way-foong-02"
+              src="/vessels/way-foong-02.jpg"
+              alt="Way Foong on the water"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · way-foong-02</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hero-wayfoong.jpg"
-              alt="Way Foong against the Hong Kong skyline — placeholder for hong-kong-historic-vessels-way-foong-01"
+              src="/vessels/way-foong-01.jpg"
+              alt="Way Foong against the Hong Kong skyline"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · way-foong-01</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">Seventy Years Afloat</p>
@@ -178,11 +170,10 @@ export function WayFoong() {
           <div
             className="charter-media"
             aria-hidden="true"
-            style={{ backgroundImage: 'url(/vessel-way-foong.jpg)' }}
+            style={{ backgroundImage: 'url(/vessels/way-foong-charters-05.jpg)' }}
           />
-          <div className="charter-veil" aria-hidden="true" />
           <div className="charter-content">
-            <p className="eyebrow light">Private Charter</p>
+            <p className="eyebrow">Private Charter</p>
             <h2>Charter Way Foong: sail into history</h2>
             <p>
               Since August 2020, Way Foong has been delighting charter guests with her unique blend of history and
@@ -193,10 +184,7 @@ export function WayFoong() {
             </p>
             <div className="hero-actions">
               <Link className="btn btn-brass" to="/contact">
-                Contact to Book
-              </Link>
-              <Link className="btn btn-ghost" to="/#fleet">
-                Back to the Fleet
+                Contact Us
               </Link>
             </div>
           </div>

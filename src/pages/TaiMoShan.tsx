@@ -38,26 +38,16 @@ export function TaiMoShan() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media vessel-hero-media--taimoshan" aria-hidden="true">
-            <img src="/vessel-tai-mo-shan.jpg" alt="" />
+            <img src="/vessels/tai-mo-shan-01.jpg" alt="" />
             <div className="vessel-hero-veil" />
           </div>
 
           <div className="vessel-hero-content">
-            <p className="brand-signal animate-in">Hong Kong Historic Vessels</p>
-            <p className="vessel-kicker animate-in delay-1">S/Y · 1933 · Hong Kong-Built Teak Ketch</p>
-            <h1 className="animate-in delay-1">Tai Mo Shan</h1>
-            <p className="hero-lede animate-in delay-2">
+            <h1 className="animate-in">Tai Mo Shan</h1>
+            <p className="hero-lede animate-in delay-1">
               A phoenix risen from the dockyards — classic elegance restored beyond her original glory, ready for the
               next chapter.
             </p>
-            <div className="hero-actions animate-in delay-3">
-              <a className="btn btn-brass" href="#story">
-                Read Her Story
-              </a>
-              <Link className="btn btn-ghost" to="/#fleet">
-                Explore the Fleet
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -100,20 +90,22 @@ export function TaiMoShan() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-tai-mo-shan.jpg"
-              alt="Tai Mo Shan — placeholder for hong-kong-historic-vessels-tai-mo-shan-01"
+              src="/vessels/tai-mo-shan-01.jpg"
+              alt="Tai Mo Shan after restoration"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · tai-mo-shan-01</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-tai-mo-shan-03.jpg"
-              alt="Tai Mo Shan detail — placeholder for hong-kong-historic-vessels-tai-mo-shan-01"
+              src="/vessels/home-tai-mo-shan.jpg"
+              alt="Tai Mo Shan on the water"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · tai-mo-shan-01</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">Her Arc</p>
@@ -142,22 +134,24 @@ export function TaiMoShan() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-tai-mo-shan.jpg"
+              src="/vessels/tai-mo-shan-01.jpg"
               className="img-focus-deck"
-              alt="Tai Mo Shan origins — placeholder for hong-kong-historic-vessels-tai-mo-shan-01"
+              alt="Tai Mo Shan classic lines"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · tai-mo-shan-01</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-tai-mo-shan-03.jpg"
+              src="/vessels/home-tai-mo-shan.jpg"
               className="img-focus-low"
-              alt="Tai Mo Shan rebuild — placeholder for hong-kong-historic-vessels-tai-mo-shan-01"
+              alt="Tai Mo Shan restored deck and hull"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · tai-mo-shan-01</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">2021–2025</p>
@@ -210,11 +204,10 @@ export function TaiMoShan() {
           <div
             className="charter-media"
             aria-hidden="true"
-            style={{ backgroundImage: 'url(/vessel-tai-mo-shan.jpg)' }}
+            style={{ backgroundImage: 'url(/vessels/tai-mo-shan-01.jpg)' }}
           />
-          <div className="charter-veil" aria-hidden="true" />
           <div className="charter-content">
-            <p className="eyebrow light">Next Chapter</p>
+            <p className="eyebrow">Next Chapter</p>
             <h2>A new chapter for a maritime icon</h2>
             <p>
               Tai Mo Shan is much more than a restored yacht; she is a phoenix risen. From her launch in the heart of a
@@ -224,14 +217,11 @@ export function TaiMoShan() {
             <p>
               This meticulous restoration has not only saved a piece of Hong Kong’s boatbuilding heritage but has
               elevated it, ensuring that the vision of Rouse and Cock will captivate a new generation. She is no longer
-              a relic of the past, but a fully realised classic, ready to explore new horizons with the same grace and
-              power she possessed in 1933.
+              a relic of the past, but a fully realised classic, ready for new horizons with the same grace and power
+              she possessed in 1933.
             </p>
             <div className="hero-actions">
-              <Link className="btn btn-brass" to="/#fleet">
-                Meet the Fleet
-              </Link>
-              <Link className="btn btn-ghost" to="/contact">
+              <Link className="btn btn-brass" to="/contact">
                 Contact Us
               </Link>
             </div>

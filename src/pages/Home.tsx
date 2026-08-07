@@ -11,7 +11,7 @@ export function Home() {
       <main id="top">
         <section className="hero">
           <div className="hero-media" aria-hidden="true">
-            <img src="/hero-wayfoong.jpg" alt="" />
+            <img src="/vessels/way-foong-charters-01.jpg" alt="" />
             <div className="hero-veil" />
           </div>
 
@@ -72,7 +72,7 @@ export function Home() {
               const isInternal = vessel.href.startsWith('/')
               const content = (
                 <>
-                  <img src={vessel.image} alt="" />
+                  <img src={vessel.image} alt="" loading="lazy" decoding="async" />
                   <div className="vessel-tile-meta">
                     <span className="vessel-tile-year">{vessel.year}</span>
                     <span className="vessel-tile-name">
@@ -106,7 +106,7 @@ export function Home() {
           <div
             className="charter-media"
             aria-hidden="true"
-            style={{ backgroundImage: 'url(/vessel-so-fong.jpg)' }}
+            style={{ backgroundImage: 'url(/vessels/so-fong-05.jpg)' }}
           />
           <div className="charter-veil" aria-hidden="true" />
           <div className="charter-content">

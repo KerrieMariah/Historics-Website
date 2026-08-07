@@ -38,26 +38,16 @@ export function Java() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media vessel-hero-media--java" aria-hidden="true">
-            <img src="/vessel-java.jpg" alt="" />
+            <img src="/vessels/java-01.jpg" alt="" />
             <div className="vessel-hero-veil" />
           </div>
 
           <div className="vessel-hero-content">
-            <p className="brand-signal animate-in">Hong Kong Historic Vessels</p>
-            <p className="vessel-kicker animate-in delay-1">M/Y · 1935 · Hong Kong-Built Motor Launch</p>
-            <h1 className="animate-in delay-1">Java</h1>
-            <p className="hero-lede animate-in delay-2">
+            <h1 className="animate-in">Java</h1>
+            <p className="hero-lede animate-in delay-1">
               A timeless icon of Hong Kong’s maritime heritage — once Marine 1, still keeping Fragrant Harbour’s story
               afloat.
             </p>
-            <div className="hero-actions animate-in delay-3">
-              <a className="btn btn-brass" href="#story">
-                Read Her Story
-              </a>
-              <Link className="btn btn-ghost" to="/#fleet">
-                Explore the Fleet
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -97,21 +87,13 @@ export function Java() {
             </p>
           </div>
           <figure className="vessel-story-media">
-            <img
-              src="/vessel-java.jpg"
-              alt="Java on the water — placeholder for hong-kong-historic-vessels-java-04"
-            />
-            <figcaption>Placeholder · java-04</figcaption>
+            <img src="/vessels/java-04.jpg" alt="Java on the water" loading="lazy" decoding="async" />
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
-            <img
-              src="/hong-kong-historic-vessels-home-java-01.jpg"
-              alt="Java detail — placeholder for hong-kong-historic-vessels-java-02"
-            />
-            <figcaption>Placeholder · java-02</figcaption>
+            <img src="/vessels/java-02.jpg" alt="Java detail" loading="lazy" decoding="async" />
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">A Storied Past</p>
@@ -145,22 +127,24 @@ export function Java() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-java.jpg"
+              src="/vessels/java-01.jpg"
               className="img-focus-deck"
-              alt="Java as a working launch — placeholder for hong-kong-historic-vessels-java-01"
+              alt="Java as a working launch"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · java-01</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-java-01.jpg"
+              src="/vessels/java-03.jpg"
               className="img-focus-low"
-              alt="Java restoration — placeholder for hong-kong-historic-vessels-java-03"
+              alt="Java restoration detail"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · java-03</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">1990s–Present</p>
@@ -221,11 +205,10 @@ export function Java() {
           <div
             className="charter-media"
             aria-hidden="true"
-            style={{ backgroundImage: 'url(/vessel-java.jpg)' }}
+            style={{ backgroundImage: 'url(/vessels/java-02.jpg)' }}
           />
-          <div className="charter-veil" aria-hidden="true" />
           <div className="charter-content">
-            <p className="eyebrow light">A Living Legacy</p>
+            <p className="eyebrow">A Living Legacy</p>
             <h2>Still at home in Fragrant Harbour</h2>
             <p>
               Java is so much more than an old wooden launch; she is a piece of living history. From her five decades of
@@ -235,10 +218,7 @@ export function Java() {
               since 1935.
             </p>
             <div className="hero-actions">
-              <Link className="btn btn-brass" to="/#fleet">
-                Meet the Fleet
-              </Link>
-              <Link className="btn btn-ghost" to="/contact">
+              <Link className="btn btn-brass" to="/contact">
                 Contact Us
               </Link>
             </div>

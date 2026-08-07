@@ -15,7 +15,7 @@ export const vessels: Vessel[] = [
     year: '1930',
     type: 'Hong Kong-Built Motor Launch',
     designation: 'M/Y',
-    image: '/vessel-way-foong.jpg',
+    image: '/vessels/home-way-foong.jpg',
     href: '/wayfoong',
   },
   {
@@ -24,7 +24,7 @@ export const vessels: Vessel[] = [
     year: '1937',
     type: 'Hong Kong-Built Gaff Schooner',
     designation: 'S/Y',
-    image: '/vessel-so-fong.jpg',
+    image: '/vessels/home-so-fong.jpg',
     href: '/sofong',
   },
   {
@@ -33,7 +33,7 @@ export const vessels: Vessel[] = [
     year: '1935',
     type: 'Hong Kong-Built Motor Launch',
     designation: 'M/Y',
-    image: '/vessel-java.jpg',
+    image: '/vessels/home-java.jpg',
     href: '/java',
   },
   {
@@ -42,16 +42,16 @@ export const vessels: Vessel[] = [
     year: '1933',
     type: 'Hong Kong-Built Teak Ketch',
     designation: 'S/Y',
-    image: '/vessel-tai-mo-shan.jpg',
+    image: '/vessels/home-tai-mo-shan.jpg',
     href: '/tai-mo-shan',
   },
   {
     id: 'typhoon',
     name: 'Typhoon',
-    year: 'Late 1920s',
+    year: '1934',
     type: 'Hong Kong-Built Gaff Day Racer',
     designation: 'S/Y',
-    image: '/vessel-typhoon.jpg',
+    image: '/vessels/home-typhoon.jpg',
     href: '/typhoon',
   },
 ]

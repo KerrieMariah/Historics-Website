@@ -40,17 +40,30 @@ export function SiteHeader() {
       }
     }
 
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') setFleetOpen(false)
-    }
-
     document.addEventListener('mousedown', onPointerDown)
-    document.addEventListener('keydown', onKeyDown)
     return () => {
       document.removeEventListener('mousedown', onPointerDown)
-      document.removeEventListener('keydown', onKeyDown)
     }
   }, [fleetOpen])
+
+  useEffect(() => {
+    if (!menuOpen && !fleetOpen) return
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== 'Escape') return
+      if (menuOpen) {
+        setMenuOpen(false)
+        setMobileFleetOpen(false)
+        return
+      }
+      setFleetOpen(false)
+    }
+
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('keydown', onKeyDown)
+    }
+  }, [menuOpen, fleetOpen])
 
   const close = () => {
     setMenuOpen(false)
@@ -64,7 +77,8 @@ export function SiteHeader() {
         <Link className="brand" to="/" aria-label="Hong Kong Historic Vessels Foundation">
           <img src="/logo.svg" alt="" width={56} height={56} />
           <span className="brand-text">
-            <span className="brand-name">Hong Kong Historic Vessels</span>
+            <span className="brand-name brand-name-full">Hong Kong Historic Vessels</span>
+            <span className="brand-name brand-name-short">Historic Vessels</span>
             <span className="brand-zh">香港古船協會</span>
           </span>
         </Link>

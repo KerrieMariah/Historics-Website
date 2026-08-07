@@ -38,26 +38,16 @@ export function Typhoon() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media vessel-hero-media--typhoon" aria-hidden="true">
-            <img src="/vessel-typhoon.jpg" alt="" />
+            <img src="/vessels/typhoon-03.jpg" alt="" />
             <div className="vessel-hero-veil" />
           </div>
 
           <div className="vessel-hero-content">
-            <p className="brand-signal animate-in">Hong Kong Historic Vessels</p>
-            <p className="vessel-kicker animate-in delay-1">S/Y · Late 1920s · Rouse W-Class Day Racer</p>
-            <h1 className="animate-in delay-1">Typhoon</h1>
-            <p className="hero-lede animate-in delay-2">
+            <h1 className="animate-in">Typhoon</h1>
+            <p className="hero-lede animate-in delay-1">
               Once Mairi Bhan — a resilient Rouse-designed day racer, rescued from the scrap heap and sailing again
               from St. Monans.
             </p>
-            <div className="hero-actions animate-in delay-3">
-              <a className="btn btn-brass" href="#story">
-                Read Her Story
-              </a>
-              <Link className="btn btn-ghost" to="/#fleet">
-                Explore the Fleet
-              </Link>
-            </div>
           </div>
         </section>
 
@@ -99,20 +89,22 @@ export function Typhoon() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-typhoon.jpg"
-              alt="Typhoon (Mairi Bhan) — placeholder for hong-kong-historic-vessels-typhoon-03"
+              src="/vessels/typhoon-03.jpg"
+              alt="Typhoon, formerly Mairi Bhan, under sail"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · typhoon-03</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-typhoon-04.jpg"
-              alt="Typhoon early history — placeholder for hong-kong-historic-vessels-typhoon-04"
+              src="/vessels/typhoon-04.jpg"
+              alt="Typhoon on the hard during her history ashore"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · typhoon-04</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">An Incomplete Past</p>
@@ -144,22 +136,24 @@ export function Typhoon() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-typhoon.jpg"
+              src="/vessels/typhoon-09.jpg"
               className="img-focus-deck"
-              alt="Typhoon ownership years — placeholder for hong-kong-historic-vessels-typhoon-09"
+              alt="Typhoon during her years of changing ownership"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · typhoon-09</figcaption>
           </figure>
         </section>
 
         <section className="vessel-chapter">
           <figure className="vessel-chapter-media">
             <img
-              src="/hong-kong-historic-vessels-home-typhoon-04.jpg"
+              src="/vessels/typhoon-11.jpg"
               className="img-focus-low"
-              alt="Typhoon rescue — placeholder for hong-kong-historic-vessels-typhoon-11"
+              alt="Typhoon awaiting rescue and restoration"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · typhoon-11</figcaption>
           </figure>
           <div className="vessel-chapter-copy">
             <p className="eyebrow">Near Loss</p>
@@ -194,10 +188,11 @@ export function Typhoon() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessel-typhoon.jpg"
-              alt="Typhoon restoration — placeholder for hong-kong-historic-vessels-typhoon-12"
+              src="/vessels/typhoon-12.jpg"
+              alt="Typhoon during her eight-year restoration"
+              loading="lazy"
+              decoding="async"
             />
-            <figcaption>Placeholder · typhoon-12</figcaption>
           </figure>
         </section>
 
@@ -230,11 +225,10 @@ export function Typhoon() {
           <div
             className="charter-media"
             aria-hidden="true"
-            style={{ backgroundImage: 'url(/hong-kong-historic-vessels-home-typhoon-04.jpg)' }}
+            style={{ backgroundImage: 'url(/vessels/typhoon-05.jpg)' }}
           />
-          <div className="charter-veil" aria-hidden="true" />
           <div className="charter-content">
-            <p className="eyebrow light">Triumphant Return</p>
+            <p className="eyebrow">Triumphant Return</p>
             <h2>Sailing into a new era</h2>
             <p>
               The beautifully restored Mairi Bhan was triumphantly relaunched in April 2021. Having been returned to its
@@ -242,10 +236,7 @@ export function Typhoon() {
               sailing from its home port of St. Monans and securing its legacy for the future.
             </p>
             <div className="hero-actions">
-              <Link className="btn btn-brass" to="/#fleet">
-                Meet the Fleet
-              </Link>
-              <Link className="btn btn-ghost" to="/contact">
+              <Link className="btn btn-brass" to="/contact">
                 Contact Us
               </Link>
             </div>
