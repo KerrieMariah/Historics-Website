@@ -8,7 +8,7 @@ const EMAIL = 'info@hongkonghistoricvessels.org'
 export function Contact() {
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = 'Contact Us — Hong Kong Historic Vessels'
+    document.title = 'Contact Us | Hong Kong Historic Vessels'
     return () => {
       document.title = 'Hong Kong Historic Vessels Foundation'
     }
@@ -45,6 +45,7 @@ export function Contact() {
 
         <section className="contact-panel" aria-labelledby="contact-email-heading">
           <div className="contact-panel-inner">
+            <img className="mission-mark" src="/logo-outline.png" alt="" />
             <p className="eyebrow">Direct Line</p>
             <h2 id="contact-email-heading">Write to us</h2>
             <p>
@@ -54,6 +55,11 @@ export function Contact() {
             <a className="contact-email" href={`mailto:${EMAIL}`}>
               {EMAIL}
             </a>
+            <img
+              className="mission-words"
+              src="/logo-words.png"
+              alt="Hong Kong Historic Vessels Foundation"
+            />
           </div>
         </section>
       </main>

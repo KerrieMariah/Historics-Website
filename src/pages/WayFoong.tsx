@@ -29,7 +29,7 @@ const features = [
 export function WayFoong() {
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = 'M/Y Way Foong — Hong Kong Historic Vessels'
+    document.title = 'M/Y Way Foong | Hong Kong Historic Vessels'
     return () => {
       document.title = 'Hong Kong Historic Vessels Foundation'
     }
@@ -49,7 +49,7 @@ export function WayFoong() {
           <div className="vessel-hero-content">
             <h1 className="animate-in">Way Foong</h1>
             <p className="hero-lede animate-in delay-1">
-              A timeless icon of Hong Kong’s maritime heritage — seventy feet of Burmese teak, still keeping the
+              A timeless icon of Hong Kong’s maritime heritage: seventy feet of Burmese teak, still keeping the
               islands afloat in style.
             </p>
           </div>
@@ -77,19 +77,9 @@ export function WayFoong() {
         </section>
 
         <section className="vessel-story" id="story">
-          <div className="vessel-story-copy">
+          <div className="vessel-block-heading">
             <p className="eyebrow">Her Legacy</p>
             <h2>From coal-fired steam to harbour legend</h2>
-            <p>
-              Way Foong’s legacy begins in September 1930, when she was launched as a coal-fired steam vessel — a
-              slightly modified replica of her 1898 predecessor of the same name. Measuring 70 feet in length with a
-              13-foot beam, she was designed for both utility and grace, powered by a boiler that propelled her through
-              Hong Kong’s bustling waters.
-            </p>
-            <p>
-              In her early years, she served HSBC in unique ways, including the famed “burning picnics” of the 1930s,
-              where junior staff from the bank’s Note Cancellation Department used old banknotes as fuel in her furnace.
-            </p>
           </div>
           <figure className="vessel-story-media">
             <img
@@ -99,9 +89,25 @@ export function WayFoong() {
               decoding="async"
             />
           </figure>
+          <div className="vessel-story-body">
+            <p>
+              Way Foong’s legacy begins in September 1930, when she was launched as a coal-fired steam vessel, a
+              slightly modified replica of her 1898 predecessor of the same name. Measuring 70 feet in length with a
+              13-foot beam, she was designed for both utility and grace, powered by a boiler that propelled her through
+              Hong Kong’s bustling waters.
+            </p>
+            <p>
+              In her early years, she served HSBC in unique ways, including the famed “burning picnics” of the 1930s,
+              where junior staff from the bank’s Note Cancellation Department used old banknotes as fuel in her furnace.
+            </p>
+          </div>
         </section>
 
         <section className="vessel-chapter">
+          <div className="vessel-block-heading">
+            <p className="eyebrow">Seventy Years Afloat</p>
+            <h2>A working beauty of teak and tradition</h2>
+          </div>
           <figure className="vessel-chapter-media">
             <img
               src="/vessels/way-foong-01.jpg"
@@ -110,9 +116,7 @@ export function WayFoong() {
               decoding="async"
             />
           </figure>
-          <div className="vessel-chapter-copy">
-            <p className="eyebrow">Seventy Years Afloat</p>
-            <h2>A working beauty of teak and tradition</h2>
+          <div className="vessel-chapter-body">
             <p>
               By the 1980s, Way Foong had evolved into a multifaceted asset for HSBC. Before the Cross Harbour Tunnel’s
               construction, she shuttled executives from the Peak to Central. Later, she provided recreational outings
@@ -123,7 +127,7 @@ export function WayFoong() {
               Her annual upkeep cost around HK$200,000, reflecting the bank’s commitment to preserving this wooden beauty
               of Burmese teak and yakal. Equipped with a spacious engine room, forward cabin, two heads, and modern
               amenities like radar in an enlarged pilothouse, she embodied a blend of tradition and functionality. Her
-              teak decks, softened by years of scrubbing, and graceful lines earned her admiration — often spotted
+              teak decks, softened by years of scrubbing, and graceful lines earned her admiration, often spotted
               keeping the islands afloat in style.
             </p>
             <p>
@@ -159,9 +163,9 @@ export function WayFoong() {
           </div>
 
           <p className="vessel-restore-note">
-            Her original features — the shortened funnel, now aesthetic rather than functional, and brass telegraph for
-            direct communication — blend effortlessly with updates such as a radar-equipped pilothouse and 10.5 tons of
-            pig iron ballast for stability. The result is a vessel that sails smoothly, with a gentle roll even in open
+            Her original features, from the shortened funnel (now aesthetic rather than functional) to the brass
+            telegraph for direct communication, blend effortlessly with updates such as a radar-equipped pilothouse and
+            10.5 tons of pig iron ballast for stability. The result is a vessel that sails smoothly, with a gentle roll even in open
             waters, while honouring her heritage.
           </p>
         </section>
@@ -177,8 +181,8 @@ export function WayFoong() {
             <h2>Charter Way Foong: sail into history</h2>
             <p>
               Since August 2020, Way Foong has been delighting charter guests with her unique blend of history and
-              luxury. Regularly seen in Sai Kung or along Hong Kong Island’s south side — often alongside the fleet’s
-              smaller classic launch, Java — she’s the perfect choice for bespoke adventures. Whether a family outing,
+              luxury. Regularly seen in Sai Kung or along Hong Kong Island’s south side, often alongside the fleet’s
+              smaller classic launch, Java, she’s the perfect choice for bespoke adventures. Whether a family outing,
               corporate event, or romantic escape, Way Foong offers a rare opportunity to cruise on a living piece of
               Hong Kong’s past.
             </p>

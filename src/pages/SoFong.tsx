@@ -14,11 +14,11 @@ const features = [
   },
   {
     title: 'Perkins Sabre',
-    detail: '190hp auxiliary power — up to 9 knots, with an 800-nautical-mile range.',
+    detail: '190hp auxiliary power, up to 9 knots, with an 800-nautical-mile range.',
   },
   {
     title: 'Lead Ballast',
-    detail: '30,000 pounds of lead — recognised as the largest ever cast in Hong Kong at the time.',
+    detail: '30,000 pounds of lead, recognised as the largest ever cast in Hong Kong at the time.',
   },
   {
     title: 'Accommodation',
@@ -29,7 +29,7 @@ const features = [
 export function SoFong() {
   useEffect(() => {
     window.scrollTo(0, 0)
-    document.title = 'S/Y So Fong — Hong Kong Historic Vessels'
+    document.title = 'S/Y So Fong | Hong Kong Historic Vessels'
     return () => {
       document.title = 'Hong Kong Historic Vessels Foundation'
     }
@@ -49,7 +49,7 @@ export function SoFong() {
           <div className="vessel-hero-content">
             <h1 className="animate-in">So Fong</h1>
             <p className="hero-lede animate-in delay-1">
-              An enduring classic schooner’s journey — “Beautiful Girl” in Cantonese, home again in Fragrant Harbour
+              An enduring classic schooner’s journey. “Beautiful Girl” in Cantonese, home again in Fragrant Harbour
               after nearly nine decades at sea.
             </p>
           </div>
@@ -77,9 +77,19 @@ export function SoFong() {
         </section>
 
         <section className="vessel-story" id="story">
-          <div className="vessel-story-copy">
+          <div className="vessel-block-heading">
             <p className="eyebrow">Her Return</p>
             <h2>An enduring classic schooner’s journey</h2>
+          </div>
+          <figure className="vessel-story-media">
+            <img
+              src="/vessels/so-fong-15.jpg"
+              alt="So Fong under sail"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div className="vessel-story-body">
             <p>
               The elegant 82-foot gaff-rigged schooner So Fong represents one of Hong Kong’s finest maritime creations.
               Designed by the renowned firm Sparkman &amp; Stephens and built in 1937 at the historic Ah King Slipway,
@@ -91,17 +101,13 @@ export function SoFong() {
               triumphantly returned to her Hong Kong birthplace to join the historic fleet in early 2025.
             </p>
           </div>
-          <figure className="vessel-story-media">
-            <img
-              src="/vessels/so-fong-15.jpg"
-              alt="So Fong under sail"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
         </section>
 
         <section className="vessel-chapter">
+          <div className="vessel-block-heading">
+            <p className="eyebrow">1937</p>
+            <h2>Masterful construction and epic maiden voyage</h2>
+          </div>
           <figure className="vessel-chapter-media">
             <img
               src="/vessels/so-fong-14.jpg"
@@ -110,9 +116,7 @@ export function SoFong() {
               decoding="async"
             />
           </figure>
-          <div className="vessel-chapter-copy">
-            <p className="eyebrow">1937</p>
-            <h2>Masterful construction and epic maiden voyage</h2>
+          <div className="vessel-chapter-body">
             <p>
               So Fong was meticulously constructed over seven months by approximately 250 skilled artisans at the
               prestigious Ah King Slipway. The vessel featured exquisite teak planking, a sturdy yacal keel and frames,
@@ -129,9 +133,20 @@ export function SoFong() {
         </section>
 
         <section className="vessel-story">
-          <div className="vessel-story-copy">
+          <div className="vessel-block-heading">
             <p className="eyebrow">1940s–1990</p>
             <h2>Wartime service and dramatic Cold War captivity</h2>
+          </div>
+          <figure className="vessel-story-media">
+            <img
+              src="/vessels/so-fong-10.jpg"
+              className="img-focus-deck"
+              alt="So Fong sailing offshore"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <div className="vessel-story-body">
             <p>
               During the turbulent years of World War II, the reliable So Fong was requisitioned by the U.S. Coast Guard
               for essential wartime operations. After the conflict ended, she returned to the Pacific and established a
@@ -145,18 +160,13 @@ export function SoFong() {
               1990.
             </p>
           </div>
-          <figure className="vessel-story-media">
-            <img
-              src="/vessels/so-fong-10.jpg"
-              className="img-focus-deck"
-              alt="So Fong sailing offshore"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
         </section>
 
         <section className="vessel-chapter">
+          <div className="vessel-block-heading">
+            <p className="eyebrow">2000–2025</p>
+            <h2>Modern renaissance and triumphant homecoming</h2>
+          </div>
           <figure className="vessel-chapter-media">
             <img
               src="/vessels/so-fong-02.jpg"
@@ -166,9 +176,7 @@ export function SoFong() {
               decoding="async"
             />
           </figure>
-          <div className="vessel-chapter-copy">
-            <p className="eyebrow">2000–2025</p>
-            <h2>Modern renaissance and triumphant homecoming</h2>
+          <div className="vessel-chapter-body">
             <p>
               Following her dramatic escape, So Fong underwent further extensive restoration in Antibes, France from
               2000–2002. Based in Mallorca during the early 2000s, she achieved racing glory by winning the prestigious
@@ -223,7 +231,7 @@ export function SoFong() {
             <h2>Back where her story began</h2>
             <p>
               Nearly ninety years after she first slipped into Hong Kong waters, So Fong sails once more among the
-              city’s historic fleet — a Sparkman &amp; Stephens classic, built by local hands, returned at last to
+              city’s historic fleet: a Sparkman &amp; Stephens classic, built by local hands, returned at last to
               Fragrant Harbour. Now happily back in her home waters, she continues to sail as a proud testament to both
               classic yacht design and Hong Kong’s rich boatbuilding heritage.
             </p>

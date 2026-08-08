@@ -6,6 +6,7 @@ export type Vessel = {
   designation: string
   image: string
   href: string
+  blurb: string
 }
 
 export const vessels: Vessel[] = [
@@ -17,6 +18,8 @@ export const vessels: Vessel[] = [
     designation: 'M/Y',
     image: '/vessels/home-way-foong.jpg',
     href: '/wayfoong',
+    blurb:
+      'Seventy feet of Burmese teak, once HSBC’s harbour launch, now a living icon still keeping the islands afloat in style.',
   },
   {
     id: 'so-fong',
@@ -26,6 +29,8 @@ export const vessels: Vessel[] = [
     designation: 'S/Y',
     image: '/vessels/home-so-fong.jpg',
     href: '/sofong',
+    blurb:
+      'A Sparkman & Stephens classic whose name means “Beautiful Girl” in Cantonese, home again after nearly nine decades at sea.',
   },
   {
     id: 'java',
@@ -35,6 +40,8 @@ export const vessels: Vessel[] = [
     designation: 'M/Y',
     image: '/vessels/home-java.jpg',
     href: '/java',
+    blurb:
+      'Once Marine 1, the government’s harbour workhorse, rescued from an uncertain fate and restored as a piece of living history.',
   },
   {
     id: 'tai-mo-shan',
@@ -44,6 +51,8 @@ export const vessels: Vessel[] = [
     designation: 'S/Y',
     image: '/vessels/home-tai-mo-shan.jpg',
     href: '/tai-mo-shan',
+    blurb:
+      'A Harold S. Rouse ketch from Hong Kong & Whampoa Dock, restored in Greece as a phoenix risen beyond her original glory.',
   },
   {
     id: 'typhoon',
@@ -53,5 +62,7 @@ export const vessels: Vessel[] = [
     designation: 'S/Y',
     image: '/vessels/home-typhoon.jpg',
     href: '/typhoon',
+    blurb:
+      'Once Mairi Bhan, a resilient Rouse W-class day racer, saved from the scrap heap and sailing again from St. Monans.',
   },
 ]
