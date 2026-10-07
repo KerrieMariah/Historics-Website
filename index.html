@@ -9,12 +9,64 @@
       name="description"
       content="Preserving Hong Kong’s 1930s maritime heritage through five restored historic vessels, a living archive of Fragrant Harbour."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Sora:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/cardo-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/cardo-italic-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+      @font-face {
+        font-family: 'Sora';
+        font-style: normal;
+        font-weight: 300 600;
+        font-display: block;
+        src: url('/fonts/sora-latin.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Cardo';
+        font-style: normal;
+        font-weight: 400;
+        font-display: block;
+        src: url('/fonts/cardo-latin.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      @font-face {
+        font-family: 'Cardo';
+        font-style: italic;
+        font-weight: 400;
+        font-display: block;
+        src: url('/fonts/cardo-italic-latin.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
+    <script>
+      (function () {
+        var heroes = {
+          '/': '/vessels/way-foong-charters-01.jpg',
+          '/wayfoong': '/vessels/way-foong-charters-01.jpg',
+          '/way-foong': '/vessels/way-foong-charters-01.jpg',
+          '/sofong': '/vessels/so-fong-15.jpg',
+          '/so-fong': '/vessels/so-fong-15.jpg',
+          '/java': '/vessels/java-01.jpg',
+          '/tai-mo-shan': '/vessels/tai-mo-shan-01.jpg',
+          '/taimoshan': '/vessels/tai-mo-shan-01.jpg',
+          '/typhoon': '/vessels/typhoon-03.jpg',
+          '/mairi-bhan': '/vessels/typhoon-03.jpg',
+          '/contact': '/vessels/home-way-foong.jpg',
+          '/contact-us': '/vessels/home-way-foong.jpg',
+        }
+        var path = location.pathname.replace(/\/+$/, '') || '/'
+        var href = heroes[path]
+        if (!href) return
+        var link = document.createElement('link')
+        link.rel = 'preload'
+        link.as = 'image'
+        link.href = href
+        link.fetchPriority = 'high'
+        document.head.appendChild(link)
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>

@@ -42,7 +42,7 @@ export function SoFong() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media vessel-hero-media--sofong" aria-hidden="true">
-            <img src="/vessels/so-fong-15.jpg" alt="" />
+            <img src="/vessels/so-fong-15.jpg" alt="" fetchPriority="high" />
             <div className="vessel-hero-veil" />
           </div>
 

@@ -70,7 +70,7 @@ export function Home() {
       <main id="top">
         <section className="hero">
           <div className="hero-media" aria-hidden="true">
-            <img src="/vessels/way-foong-charters-01.jpg" alt="" />
+            <img src="/vessels/way-foong-charters-01.jpg" alt="" fetchPriority="high" />
             <div className="hero-veil" />
           </div>
 
@@ -87,9 +87,9 @@ export function Home() {
               <a className="btn btn-brass" href="#fleet">
                 Explore the Fleet
               </a>
-              <a className="btn btn-ghost" href="#charter">
-                Book a Charter
-              </a>
+              <Link className="btn btn-ghost" to="/contact">
+                Get in Touch
+              </Link>
             </div>
           </div>
 

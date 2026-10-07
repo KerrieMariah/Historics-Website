@@ -21,7 +21,7 @@ export function Contact() {
       <main className="contact-page" id="top">
         <section className="contact-hero">
           <div className="contact-hero-media" aria-hidden="true">
-            <img src="/vessels/home-way-foong.jpg" alt="" />
+            <img src="/vessels/home-way-foong.jpg" alt="" fetchPriority="high" />
             <div className="contact-hero-veil" />
           </div>
 

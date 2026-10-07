@@ -470,6 +470,7 @@ p {
     calc(var(--space) + env(safe-area-inset-left, 0px));
   color: var(--white);
   overflow: hidden;
+  background: var(--harbour-deep);
 }
 
 .hero-media {
@@ -517,7 +518,7 @@ p {
 }
 
 .hero h1 em {
-  font-style: italic;
+  font-style: normal;
   color: var(--brass-soft);
 }
 
@@ -979,6 +980,7 @@ p {
     calc(var(--space) + env(safe-area-inset-left, 0px));
   color: var(--white);
   text-align: center;
+  background: var(--harbour-deep);
 }
 
 .vessel-hero-media {
@@ -1621,6 +1623,7 @@ p {
     calc(var(--space) + env(safe-area-inset-left, 0px));
   color: var(--white);
   overflow: hidden;
+  background: var(--harbour-deep);
 }
 
 .contact-hero-media,

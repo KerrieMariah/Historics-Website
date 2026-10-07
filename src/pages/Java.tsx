@@ -38,7 +38,7 @@ export function Java() {
       <main className="vessel-page" id="top">
         <section className="vessel-hero">
           <div className="vessel-hero-media vessel-hero-media--java" aria-hidden="true">
-            <img src="/vessels/java-01.jpg" alt="" />
+            <img src="/vessels/java-01.jpg" alt="" fetchPriority="high" />
             <div className="vessel-hero-veil" />
           </div>
 
