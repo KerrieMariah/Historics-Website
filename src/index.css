@@ -1528,6 +1528,11 @@ p {
     text-align: center;
   }
 
+  .footer-brand img {
+    width: 6rem;
+    height: 6rem;
+  }
+
   .footer-nav {
     justify-content: center;
   }
