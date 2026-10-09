@@ -150,14 +150,9 @@ export function Home() {
               Experience Hong Kong’s waters aboard flagship vessels Way Foong and So Fong, beautifully preserved
               classics available for private charter through our sister organisation, Hong Kong Classic Charters.
             </p>
-            <a
-              className="btn btn-brass"
-              href="https://hongkonghistoricvessels.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Book Your Charter
-            </a>
+            <Link className="btn btn-brass" to="/contact">
+              Get in Touch
+            </Link>
           </Reveal>
         </section>
       </main>

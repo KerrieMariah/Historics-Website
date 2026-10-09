@@ -79,8 +79,8 @@ export function TaiMoShan() {
           </div>
           <figure className="vessel-story-media">
             <img
-              src="/vessels/tai-mo-shan-01.jpg"
-              alt="Tai Mo Shan after restoration"
+              src="/simplysailingTMS.jpg"
+              alt="Tai Mo Shan under sail, a historical photograph"
               loading="lazy"
               decoding="async"
             />
@@ -107,8 +107,8 @@ export function TaiMoShan() {
           </div>
           <figure className="vessel-chapter-media">
             <img
-              src="/vessels/home-tai-mo-shan.jpg"
-              alt="Tai Mo Shan on the water"
+              src="/tai%20mo%20shan.png"
+              alt="Historical photograph of Tai Mo Shan sailing off a coastline"
               loading="lazy"
               decoding="async"
             />
@@ -156,9 +156,8 @@ export function TaiMoShan() {
           </div>
           <figure className="vessel-chapter-media">
             <img
-              src="/vessels/home-tai-mo-shan.jpg"
-              className="img-focus-low"
-              alt="Tai Mo Shan restored deck and hull"
+              src="/tai%20mo%20shan%20grand%20rebuild.jpeg"
+              alt="Tai Mo Shan’s deck during the grand rebuild in the yard"
               loading="lazy"
               decoding="async"
             />
