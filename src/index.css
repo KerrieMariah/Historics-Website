@@ -2539,6 +2539,10 @@ p {
     justify-content: center;
   }
 
+  .news-feature-copy h2 {
+    line-height: 1.2;
+  }
+
   .news-deck {
     padding-left: 0;
     border-left: 0;
