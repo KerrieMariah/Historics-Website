@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { Contact } from './pages/Contact'
 import { Home } from './pages/Home'
 import { Java } from './pages/Java'
+import { News } from './pages/News'
 import { SoFong } from './pages/SoFong'
 import { TaiMoShan } from './pages/TaiMoShan'
 import { Typhoon } from './pages/Typhoon'
@@ -44,6 +45,8 @@ export default function App() {
         <Route path="/taimoshan" element={<Navigate to="/tai-mo-shan" replace />} />
         <Route path="/typhoon" element={<Typhoon />} />
         <Route path="/mairi-bhan" element={<Navigate to="/typhoon" replace />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/press" element={<Navigate to="/news" replace />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact-us" element={<Navigate to="/contact" replace />} />
         <Route path="*" element={<Navigate to="/" replace />} />

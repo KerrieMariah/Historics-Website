@@ -113,6 +113,7 @@ export function SiteHeader() {
             </div>
           </div>
           <Link to="/#mission">The Foundation</Link>
+          <Link to="/news">News</Link>
           <Link to="/contact">Contact Us</Link>
         </nav>
 
@@ -156,6 +157,9 @@ export function SiteHeader() {
         </div>
         <Link to="/#mission" onClick={close}>
           The Foundation
+        </Link>
+        <Link to="/news" onClick={close}>
+          News
         </Link>
         <Link to="/contact" onClick={close}>
           Contact Us

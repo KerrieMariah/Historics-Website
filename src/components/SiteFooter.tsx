@@ -16,6 +16,7 @@ export function SiteFooter() {
         <Link to="/java">Java</Link>
         <Link to="/tai-mo-shan">Tai Mo Shan</Link>
         <Link to="/typhoon">Typhoon</Link>
+        <Link to="/news">News</Link>
         <Link to="/contact">Contact Us</Link>
       </nav>
       <p className="footer-copy">© {new Date().getFullYear()} hongkonghistoricvessels.com</p>
